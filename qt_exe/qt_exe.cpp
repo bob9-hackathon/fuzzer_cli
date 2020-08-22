@@ -29,7 +29,7 @@ int main()
 	cout << "URL 파라미터(POST) 입력하세요: ";
 	string post; getline(cin, post);
 
-	string s = "python.exe " + path + " -urls " + url + " -seed " + seed + (param.size() > 0 ? " -params " + param : "") + (post.size() > 0 ? " -post " + post : "");
+	string s = "python.exe \"" + path + "\" -urls \"" + url + "\" -seed \"" + seed + "\" -cookie \"" + cookie + "\"" + (param.size() > 0 ? " -params \"" + param + "\"": "") + (post.size() > 0 ? " -post \"" + post + "\"" : "");
 	cout << "[EXECUTE] > " << s << "\n";
 	system(s.c_str());
 }
