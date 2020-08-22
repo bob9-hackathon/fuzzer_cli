@@ -1,0 +1,5 @@
+Debug/
+x64/
+qt_exe/Debug
+qt_exe/x64
+.vs
